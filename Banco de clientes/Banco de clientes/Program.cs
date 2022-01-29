@@ -144,17 +144,8 @@ namespace Banco_de_Dados
                 Console.Clear();
 
             } while (esco > 3);
-
-
-
-
-
-
-
-
-
+            
         }
     }
-
 
 }

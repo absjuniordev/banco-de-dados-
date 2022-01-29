@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "2943a281-3e6b-4ffe-a06c-ce14cb877a1e": {
+      "ProjectGuid": "2943a281-3e6b-4ffe-a06c-ce14cb877a1e",
+      "DisplayName": "Banco de clientes",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}
