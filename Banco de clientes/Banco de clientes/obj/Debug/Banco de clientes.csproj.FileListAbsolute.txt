@@ -1,0 +1,7 @@
+C:\Users\absju\Documents\Projeto no GitHub\Banco de clientes\Banco de clientes\Banco de clientes\bin\Debug\Banco de clientes.exe.config
+C:\Users\absju\Documents\Projeto no GitHub\Banco de clientes\Banco de clientes\Banco de clientes\bin\Debug\Banco de clientes.exe
+C:\Users\absju\Documents\Projeto no GitHub\Banco de clientes\Banco de clientes\Banco de clientes\bin\Debug\Banco de clientes.pdb
+C:\Users\absju\Documents\Projeto no GitHub\Banco de clientes\Banco de clientes\Banco de clientes\obj\Debug\Banco de clientes.csproj.SuggestedBindingRedirects.cache
+C:\Users\absju\Documents\Projeto no GitHub\Banco de clientes\Banco de clientes\Banco de clientes\obj\Debug\Banco de clientes.csproj.CoreCompileInputs.cache
+C:\Users\absju\Documents\Projeto no GitHub\Banco de clientes\Banco de clientes\Banco de clientes\obj\Debug\Banco de clientes.exe
+C:\Users\absju\Documents\Projeto no GitHub\Banco de clientes\Banco de clientes\Banco de clientes\obj\Debug\Banco de clientes.pdb
