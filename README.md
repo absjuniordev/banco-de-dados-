@@ -1,6 +1,6 @@
 # Banco de dados
 
-**Este projeto, tem como objetivo a criação de um aplicação para cadastro de usuarios**
+### ste projeto, tem como objetivo a criação de um aplicação para cadastro de usuarios
 
 ### A primeira parte deste projeto sera o desenvolvimento da logica, e em seguida a interação grafica
 
