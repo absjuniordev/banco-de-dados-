@@ -6,4 +6,4 @@
 
 ### A medida em que for possivel o aumento dos meus conhecimentos praticos, eu irei atualizar as informações e o que mais for preciso.
 
- 
+### Redução de codgos
