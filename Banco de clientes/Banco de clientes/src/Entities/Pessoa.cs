@@ -67,7 +67,7 @@ namespace Banco_de_clientes
         }
 
         //Funções
-        public string retornaTitulo()
+        public string retornaNome()
         {
             return this.Nome;
         }

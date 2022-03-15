@@ -28,7 +28,7 @@ namespace Banco_de_clientes
             Console.WriteLine("R- Retornar");
             Console.Write(":");
 
-            string opcaoUsuario = Console.ReadLine().ToUpper();//indiferente do tipo A ou a
+            string opcaoUsuario = Console.ReadLine().ToUpper();
             Console.WriteLine();
             return opcaoUsuario;
         }
