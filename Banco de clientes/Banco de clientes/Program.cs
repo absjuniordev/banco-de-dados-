@@ -1,4 +1,6 @@
-﻿using System;
+﻿
+using Banco_de_clientes;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,94 +13,40 @@ namespace Banco_de_Dados
     {
         static void Main(string[] args)
         {
-            string opcaoUsuario;
-           do
-            {
-                opcaoUsuario = ObterOpcaoUsuario();
 
-                switch (opcaoUsuario.ToUpper())
+            IntercaoUsuario.Apresentacao();
+
+
+            var opcaoUsuario = IntercaoUsuario.ObterOpcaoUsuario();
+
+            while (opcaoUsuario.ToUpper() != "X")
+            {
+                switch (opcaoUsuario)
                 {
                     case "1":
-                        cadastroUsuario(1);
+                        MetodosAplicados.ListarCadastro();
                         break;
                     case "2":
-                        WriteLine("Em implementação");
+                        MetodosAplicados.InserirCadastro();
                         break;
                     case "3":
-                        WriteLine("Saindo...");
+                        MetodosAplicados.AtualizarCadastro();
                         break;
+                    case "4":
+                        MetodosAplicados.ExcluirCadastro();
+                        break;
+                    case "5":
+                        MetodosAplicados.VisualizarCadastro();
+                        break;
+                    case "C":
+                        Console.Clear();
+                        break;
+
                     default:
-                        WriteLine("Opcão invalida");
-                        ReadLine();
-                        break;
-                        
+                        throw new ArgumentOutOfRangeException();
                 }
-                Clear();
-            } while (opcaoUsuario.ToUpper() != "3");
-        }
-
-        private static string ObterOpcaoUsuario()
-        {
-            string opcaoUsuario;
-            WriteLine("|============-CADASTRO DE USUARIOS-=============|");
-            WriteLine("|----------------Seja bem vindo!----------------|");
-            WriteLine("|===============================================|");
-            Write("O que deseja fazer? \n1 - Cadastrar clientes \n2 - Listar usuario \n3 - Sair \n: ");
-            opcaoUsuario = (ReadLine());
-            WriteLine("|-----------------------------------------------|");
-            return opcaoUsuario;
-        }
-          
-        
-        private static int cadastroUsuario(int contt)
-        {
-            List<string> nome = new List<string>();
-            List<string> enderero = new List<string>();
-            List<string> telefone = new List<string>();
-            string ind, resp1 = "", resp = "";
-            int ContadorDeUsuario = 1, TotalUsuario = 0;
-            do
-            {
-                Write($"Digite o {ContadorDeUsuario}ª nome: "); 
-                ind = ReadLine();
-                nome.Add(ind);
-                Write($"Digite o {ContadorDeUsuario}ª endereço: ");
-                ind = ReadLine();
-                enderero.Add(ind);
-                Write($"Digite o {ContadorDeUsuario}ª telefone: ");
-                ind = ReadLine();
-                telefone.Add(ind);
-
-                Write("Deseja continuar cadastrando? [s/n]: ");
-                resp = ReadLine();
-                TotalUsuario++;
-                ContadorDeUsuario++;
-                Clear();
-                WriteLine("---------------------------------------------");
-            } while (resp == "s");
-          
-            WriteLine($"{TotalUsuario} Usuarios(s) cadastrado(s).");
-            WriteLine("---------------------------------------------");
-            Write("Deseja listar o(s) nome(s)? [s/n]");
-            resp1 = ReadLine();
-            WriteLine("---------------------------------------------");
-            
-            if (resp1 == "s")
-            {
-                string[] arr_sample1 = nome.ToArray();
-                string[] arr_sample2 = enderero.ToArray();
-                string[] arr_sample3 = telefone.ToArray();
-                for (int index = 0; index < TotalUsuario; index++)
-                {
-                    System.Console.WriteLine($"Nome:{arr_sample1[index]}\nEndereço:{arr_sample2[index]}\nTelefone:{arr_sample3[index]}");
-                    WriteLine("---------------------------------------------");
-                }
-                ReadLine();
+                opcaoUsuario = IntercaoUsuario.ObterOpcaoUsuario();
             }
-            else WriteLine("Obrigado");
-            WriteLine("Pressione ENTER para retornar ao MENU.");
-            return contt;
-        }       
+        }
     }
-
 }

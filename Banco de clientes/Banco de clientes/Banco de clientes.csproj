@@ -45,7 +45,13 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="src\Caracteristicas\Profissao.cs" />
+    <Compile Include="src\Caracteristicas\EstadoCivil.cs" />
+    <Compile Include="src\Caracteristicas\RepositorioPessoa.cs" />
+    <Compile Include="src\Diretrizes\IRepositorio.cs" />
     <Compile Include="src\Entities\Pessoa.cs" />
+    <Compile Include="src\ExecucaoMetodos\IntercaoUsuario.cs" />
+    <Compile Include="src\ExecucaoMetodos\MetodosAplicados.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
