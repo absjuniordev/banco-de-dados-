@@ -11,14 +11,14 @@ namespace Banco_de_clientes
     {
         private List<Pessoa> listaPessoa = new List<Pessoa>();
 
-        public void Atualiza(int id, Pessoa objeto)
+        public List<Pessoa> Lista()
         {
-            listaPessoa[id] = objeto;
+            return listaPessoa;
         }
 
-        public void Exclui(int id)
+        public Pessoa RetornaPortaId(int id)
         {
-            listaPessoa[id].Excluir();
+            return listaPessoa[id];
         }
 
         public void Insere(Pessoa objeto)
@@ -26,9 +26,14 @@ namespace Banco_de_clientes
             listaPessoa.Add(objeto);
         }
 
-        public List<Pessoa> Lista()
+        public void Exclui(int id)
         {
-            return listaPessoa;
+            listaPessoa[id].Excluir();
+        }
+
+        public void Atualiza(int id, Pessoa objeto)
+        {
+            listaPessoa[id] = objeto;
         }
 
         public int ProximoId()
@@ -36,10 +41,6 @@ namespace Banco_de_clientes
             return listaPessoa.Count;
         }
 
-        public Pessoa RetornaPortaId(int id)
-        {
-  
-            return listaPessoa[id];
-        }
+
     }
 }

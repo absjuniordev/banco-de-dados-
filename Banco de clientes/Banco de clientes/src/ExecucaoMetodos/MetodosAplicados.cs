@@ -144,18 +144,25 @@ namespace Banco_de_clientes
 
         public static void ExcluirCadastro()
         {
-            Console.WriteLine("Digite o id da série: ");
+            Console.Write("Digite o id do cadastro: ");
             int indiceCadastro = int.Parse(Console.ReadLine());
-            //melhoria confirmar com o usuario se realmente deseja excluir
-            repositorio.Exclui(indiceCadastro);
+            Console.Write("DESEJA REALMENTE EXCLUIR O CADASTRO? [S/N]:");
+            char resp = char.Parse(Console.ReadLine().ToUpper());
+            if(resp == 'S')
+            {
+                repositorio.Exclui(indiceCadastro);
+            }
+            Console.WriteLine();
+            return;
+            
         }
 
         public static void VisualizarCadastro()
         {
-            Console.WriteLine("Digite o id da série:");
+            Console.Write("Digite o id do cadastro: ");
             int indiceCadastro = int.Parse(Console.ReadLine());
 
-            var cadastro = repositorio.RetornaPortaId(indiceCadastro);//variavel do repositorio>metodo>valor
+            var cadastro = repositorio.RetornaPortaId(indiceCadastro);
             Console.WriteLine(cadastro);
         }
 

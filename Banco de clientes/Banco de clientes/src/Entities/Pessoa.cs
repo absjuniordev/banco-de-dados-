@@ -45,7 +45,7 @@ namespace Banco_de_clientes
             this.Excluido = false;
         }
 
-        public override string ToString()// Isto será referencia n ahora da impressão
+        public override string ToString()
         {
             string retorno = "";
 

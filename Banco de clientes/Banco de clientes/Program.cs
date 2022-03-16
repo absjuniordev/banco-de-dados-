@@ -13,9 +13,7 @@ namespace Banco_de_Dados
     {
         static void Main(string[] args)
         {
-
             IntercaoUsuario.Apresentacao();
-
 
             var opcaoUsuario = IntercaoUsuario.ObterOpcaoUsuario();
 
@@ -41,10 +39,10 @@ namespace Banco_de_Dados
                     case "C":
                         Console.Clear();
                         break;
-
                     default:
                         throw new ArgumentOutOfRangeException();
                 }
+                IntercaoUsuario.Apresentacao();
                 opcaoUsuario = IntercaoUsuario.ObterOpcaoUsuario();
             }
         }
