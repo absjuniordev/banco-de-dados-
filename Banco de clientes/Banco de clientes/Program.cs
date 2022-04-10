@@ -21,6 +21,7 @@ namespace Banco_de_Dados
             {
                 switch (opcaoUsuario)
                 {
+                    
                     case "1":
                         MetodosAplicados.ListarCadastro();
                         break;
@@ -40,7 +41,8 @@ namespace Banco_de_Dados
                         Console.Clear();
                         break;
                     default:
-                        throw new ArgumentOutOfRangeException();
+                         IntercaoUsuario.ObterOpcaoUsuario();
+                        break;
                 }
                 IntercaoUsuario.Apresentacao();
                 opcaoUsuario = IntercaoUsuario.ObterOpcaoUsuario();

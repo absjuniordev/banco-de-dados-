@@ -21,14 +21,13 @@ namespace Banco_de_clientes
             Console.WriteLine("|    Informe a opção desejada      |");
             Console.WriteLine("|----------------------------------|");
 
-            Console.WriteLine("|1- Listar cadastros               |");
+            Console.WriteLine("|1- Listar cadastro                |");
             Console.WriteLine("|2- Inserir novo cadastro          |");
             Console.WriteLine("|3- Atualizar cadastro             |");
             Console.WriteLine("|4- Excluir cadastro               |");
             Console.WriteLine("|5- Visualizar cadastro            |");
             Console.WriteLine("|C- Limpar tela                    |");
-            Console.WriteLine("|R- Retornar                       |");
-            Console.Write("=>");
+            Console.Write(">");
 
             string opcaoUsuario = Console.ReadLine().ToUpper();
             Console.WriteLine();

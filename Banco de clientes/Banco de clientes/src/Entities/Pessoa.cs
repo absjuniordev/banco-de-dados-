@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Banco_de_clientes
 {
-    public  class Pessoa
+    public class Pessoa
     {
         public int Id { get; protected set; }
         public string Nome { get; set; }
